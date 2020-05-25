@@ -2,7 +2,7 @@
 
 variable "app_prefix" {
   description = "Prefix to be used in the naming of some of the created heroku resources"
-  default     = "random-pineapple"
+  default     = "demo-pineapple"
 }
 
 variable "app_region" {
@@ -19,11 +19,6 @@ variable "app_stack" {
 variable "app_acm" {
   description = "The flag representing Automated Certificate Management for the app"
   default     = false
-}
-
-variable "heroku_team_name" {
-  description = "The name of the heroku organization"
-  default     = "random-pineapple-team"
 }
 
 variable "heroku_email" {

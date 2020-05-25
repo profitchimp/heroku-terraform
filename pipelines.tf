@@ -8,7 +8,7 @@
 
 # Create a Heroku pipeline
 resource "heroku_pipeline" "pipeline" {
-  name = "${var.app_prefix}-api"
+  name = "${var.app_prefix}"
 }
 
 # Couple development app to api pipeline

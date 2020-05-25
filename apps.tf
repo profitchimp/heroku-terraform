@@ -5,10 +5,6 @@ resource "heroku_app" "development" {
   region = var.app_region
   stack  = var.app_stack
   acm    = var.app_acm
-
-  organization {
-    name = var.heroku_team_name
-  }
 }
 
 resource "heroku_app" "staging" {
@@ -16,10 +12,6 @@ resource "heroku_app" "staging" {
   region = var.app_region
   stack  = var.app_stack
   acm    = var.app_acm
-
-  organization {
-    name = var.heroku_team_name
-  }
 }
 
 resource "heroku_app" "production" {
@@ -27,8 +19,4 @@ resource "heroku_app" "production" {
   region = var.app_region
   stack  = var.app_stack
   acm    = var.app_acm
-
-  organization {
-    name = var.heroku_team_name
-  }
 }
