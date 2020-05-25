@@ -1,3 +1,5 @@
+# variables.tf
+
 variable "app_prefix" {
   description = "Prefix to be used in the naming of some of the created heroku resources"
   default     = "random-pineapple"
